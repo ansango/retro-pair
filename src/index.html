@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="h-screen w-screen">
+            <div class="p-2 md:p-8">
+                <h1 class="nes-text">Pairs</h1>
+                <h3>Score:<span id="result"></span></h3>
+            </div>
+            <div class="p-2 md:p-10 flex flex-col items-center justify-center">
+                <div class="grid grid-cols-3 gap-4"></div>
+            </div>
+        </div>
+
+        <input type="hidden" value="PLAY" onclick="play()" />
+        <audio id="coin" src="sound/coin.mp3"></audio>
+        <audio id="error" src="sound/error.mp3"></audio>
+        <audio id="win" src="sound/win.mp3"></audio>
+        <script src="main.js"></script>
+    </body>
+</html>

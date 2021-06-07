@@ -1,0 +1,39 @@
+{
+  "name": "b-es6-parcel-tailwind",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "scripts": {
+    "parcel:serve": "parcel serve src/index.html -p 1234 --open",
+    "parcel:build": "parcel build src/index.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve",
+    "build": "npm-run-all clean parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "parcel",
+    "tailwind"
+  ],
+  "author": {
+    "name": "Anibal Santos",
+    "email": "anibalsantosgo@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "2.3.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "nes.css": "^2.3.0"
+  }
+}
